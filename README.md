@@ -11,7 +11,13 @@ https://restaurants-portal.vercel.app
 ```
 
 ---
+## Test Coverage
 
+- Homepage testing
+- Cart functionality
+- Order form validation
+- Responsive testing
+  
 ## Features
 
 - Browse available restaurants
