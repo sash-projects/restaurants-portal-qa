@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zamówienie</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dark.css" id="dark-theme" disabled />
+</head>
+
+<body>
+  <nav class="main-nav" data-aos="fade-down">
+    <a href="index.html">Strona główna</a>
+    <a href="restauracja1.html">Włoska</a>
+    <a href="restauracja2(pl).html">Polska</a>
+    <a href="restauracja3(az).html">Azjatycka</a>
+    <a href="restauracja4(ff).html">Fast Food</a>
+    <a href="zamowienia.html">Zamówienie</a>
+  </nav>
+  <header>
+    <h1>Formularz zamówienia</h1>
+    <button id="toggle-theme">🌙 Tryb ciemny</button>
+  </header>
+
+  <main>
+    <h2 class="zamowienie-naglowek">Twoje zamówienie:</h2>
+    <ul id="lista-koszyk"></ul>
+    <p id="suma-wrapper">Suma: <span id="suma">0</span> zł</p>
+
+    <form class="order-form">
+      <label for="name">Imię i nazwisko:</label>
+      <input type="text" id="name" name="name" required placeholder="Jan Kowalski"
+        title="Wpisz swoje imię i nazwisko" />
+
+      <label for="address">Adres:</label>
+      <input type="text" id="address" name="address" required placeholder="ul. Przykładowa 10, Warszawa"
+        title="Podaj dokładny adres dostawy" />
+
+      <label for="phone">Telefon:</label>
+      <input type="tel" id="phone" name="phone" required pattern="^\d{9}$" placeholder="123456789"
+        title="Wprowadź 9-cyfrowy numer telefonu, np. 123456789" />
+
+      <fieldset>
+        <legend>Metoda płatności:</legend>
+        <label><input type="radio" name="payment" value="gotowka" required /> Gotówka</label>
+        <label><input type="radio" name="payment" value="karta" /> Karta</label>
+        <label><input type="radio" name="payment" value="blik" /> Blik</label>
+      </fieldset>
+
+      <label for="terms">
+        <input type="checkbox" id="terms" required />
+        Akceptuję regulamin
+      </label>
+
+      <button type="submit">Złóż zamówienie</button>
+    </form>
+  </main>
+
+  <footer>&copy; 2025 SmaczneGo</footer>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-theme');
+    const darkTheme = document.getElementById('dark-theme');
+
+    let darkMode = false;
+
+    toggleBtn.addEventListener('click', () => {
+      darkMode = !darkMode;
+      darkTheme.disabled = !darkMode;
+      toggleBtn.textContent = darkMode ? '☀️ Tryb jasny' : '🌙 Tryb ciemny';
+    });
+  </script>
+
+<script type="module" src="koszyk.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zamówienie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark.css" id="dark-theme" disabled />
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <a href="index.html">Strona główna</a>
+        <a href="restauracja1.html">Włoska</a>
+        <a href="restauracja2(pl).html">Polska</a>
+        <a href="restauracja3(az).html">Azjatycka</a>
+        <a href="restauracja4(ff).html">Fast Food</a>
+        <a href="zamówienia.html">Zamówienie</a>
+    </nav>
+    <header>
+        <h1>Formularz zamówienia</h1>
+        <button id="toggle-theme">🌙 Tryb ciemny</button>
+    </header>
+
+    <main>
+        <form class="order-form">
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="name" name="name" required placeholder="Jan Kowalski"
+                title="Wpisz swoje imię i nazwisko" />
+
+            <label for="address">Adres:</label>
+            <input type="text" id="address" name="address" required placeholder="ul. Przykładowa 10, Warszawa"
+                title="Podaj dokładny adres dostawy" />
+
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" required pattern="^\d{9}$" placeholder="123456789"
+                title="Wprowadź 9-cyfrowy numer telefonu, np. 123456789" />
+
+            <fieldset>
+                <legend>Metoda płatności:</legend>
+                <label><input type="radio" name="payment" value="gotowka" required /> Gotówka</label>
+                <label><input type="radio" name="payment" value="karta" /> Karta</label>
+                <label><input type="radio" name="payment" value="blik" /> Blik</label>
+            </fieldset>
+
+            <label for="terms">
+                <input type="checkbox" id="terms" required />
+                Akceptuję regulamin
+            </label>
+
+            <button type="submit">Złóż zamówienie</button>
+        </form>
+
+
+        <footer>
+            <div class="footer-content">
+                <img src="assets/logo.jpg"" alt=" Logo" class="logo-footer" />
+                <p> Nasze social media. Zapraszamy do obserwacji! </p>
+                <div class="social-media" style="display:flex; gap:20px; justify-content:center; padding: 1rem;">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn-icons-png.flaticon.com/24/174/174848.png" alt="Facebook" width="24"
+                            height="24">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Instagram" width="24"
+                            height="24">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" width="24"
+                            height="24">
+                    </a>
+                </div>
+                <p>© 2025 SmaczneGO. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+
+</body>
+
+</html>

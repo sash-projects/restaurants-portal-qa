@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restauracja Włoska</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark.css" id="dark-theme" disabled />
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <a href="index.html">Strona główna</a>
+        <a href="restauracja1.html">Włoska</a>
+        <a href="restauracja2(pl).html">Polska</a>
+        <a href="restauracja3(az).html">Azjatycka</a>
+        <a href="restauracja4(ff).html">Fast Food</a>
+        <a href="zamówienia.html">Zamówienie</a>
+    </nav>
+     <header class="main-header">
+  <div class="header-bar">
+    <a href="index.html" class="back">&larr; Powrót</a>
+    <div class="header-actions">
+      <button id="toggle-theme">🌙 Tryb ciemny</button>
+      <a href="zamowienia.html" class="go-to-cart">🛒 Koszyk</a>
+    </div>
+  </div>
+  <h1>Menu - Restauracja Włoska</h1>
+</header>
+
+    <section class="filter">
+        <label for="category-filter">Wybierz kategorię:</label>
+        <select id="category-filter">
+            <option value="all">Wszystkie</option>
+            <option value="pizza">Pizza</option>
+            <option value="makarony">Makarony</option>
+            <option value="salatki">Sałatki</option>
+            <option value="desery">Desery</option>
+            <option value="napoje">Napoje</option>
+        </select>
+    </section>
+
+    <main class="menu">
+
+
+        <section class="category" id="pizza">
+            <h2>🍕 Pizza</h2>
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/pizza.jpg" alt="Pizza Margherita" />
+                <h3>Pizza Margherita</h3>
+                <p>Składniki: ser, pomidor, bazylia </p>
+                <p class="price">Cena: 28 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/pizza2.jpg" alt="Pizza Salami" />
+                <h3>Pizza Salami</h3>
+                <p>Składniki: ser, pomidor, bazylia, salami</p>
+                <p class="price">Cena: 30 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/pizza3.jpg" alt="Pizza spice chicken" />
+                <h3>Pizza spice chicken</h3>
+                <p>Składniki: ser, sos BBQ, kurczak grillowany, cebula, oregano</p>
+                <p class="price">Cena: 35 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/pizza4.jpg" alt="Pizza capricciosa" />
+                <h3>Pizza capricciosa</h3>
+                <p>Składniki: ser, szynka dojrzewająca, pieczarki, karczochy</p>
+                <p class="price">Cena: 36 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+
+        <section class="category" id="makarony">
+            <h2>🍝 Makarony</h2>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/spaghetti.jpg" alt="Spaghetti Bolognese" />
+                <h3>Spaghetti Bolognese</h3>
+                <p>Składniki: makaron, sos pomidorowy, mielone mięso, parmezan</p>
+                <p class="price">Cena: 32 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/carbonara.jpg" alt="Pasta Carbonara" />
+                <h3>Pasta Carbonara</h3>
+                <p>Składniki: makaron, jajko, boczek, ser pecorino</p>
+                <p class="price">Cena: 34 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/penne.jpg" alt="Penne arrabbiata" />
+                <h3>Penne Arrabbiata</h3>
+                <p>Składniki: makaron penne, ostry sos pomidorowy, czosnek</p>
+                <p class="price">Cena: 30 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/lasagna.jpg" alt="Lasagne" />
+                <h3>Lasagne</h3>
+                <p>Składniki: makaron, sos beszamelowy, mięso, ser</p>
+                <p class="price">Cena: 36 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+
+        <section class="category" id="salatki">
+            <h2>🥗 Sałatki</h2>
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/salatka1.jpg" alt="Sałatka Caprese" />
+                <h3>Sałatka Caprese</h3>
+                <p>Składniki: pomidory, mozzarella, bazylia, oliwa z oliwek</p>
+                <p class="price">Cena: 24 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/salatka2.jpg" alt="Sałatka z kurczakiem" />
+                <h3>Sałatka z kurczakiem</h3>
+                <p>Składniki: sałata, grillowany kurczak, warzywa, sos jogurtowy</p>
+                <p class="price">Cena: 26 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/salatka3.jpg" alt="Sałatka z tuńczykiem" />
+                <h3>Sałatka z tuńczykiem</h3>
+                <p>Składniki: sałata, tuńczyk, jajko, fasolka szparagowa, ziemniaki</p>
+                <p class="price">Cena: 28 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+        <section class="category" id="desery">
+            <h2>🍰 Desery</h2>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/tiramisu.jpg" alt="Tiramisu" />
+                <h3>Tiramisu</h3>
+                <p>Składniki: mascarpone, kawa, biszkopty, kakao</p>
+                <p class="price">Cena: 18 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/panna_cotta.jpg" alt="Panna Cotta" />
+                <h3>Panna Cotta</h3>
+                <p>Składniki: śmietanka, żelatyna, wanilia, owoce</p>
+                <p class="price">Cena: 16 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+
+        <section class="category" id="napoje">
+            <h2>🥤 Napoje</h2>
+
+            <article class="dish">
+                <h3>Cola</h3>
+                <p>330ml, schłodzona</p>
+                <p class="price">Cena: 6 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Woda mineralna</h3>
+                <p>500ml, gazowana lub niegazowana</p>
+                <p class="price">Cena: 5 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Sok pomarańczowy</h3>
+                <p>Świeżo wyciskany, 300ml</p>
+                <p class="price">Cena: 8 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Herbata mrożona</h3>
+                <p>Smak cytrynowy lub brzoskwiniowy, 500ml</p>
+                <p class="price">Cena: 7 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Kawa</h3>
+                <p>Espresso, cappuccino lub latte</p>
+                <p class="price">Cena: 9 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Herbata</h3>
+                <p>Do wyboru: czarna, zielona, owocowa</p>
+                <p class="price">Cena: 6 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="assets/logo.jpg"" alt=" Logo" class="logo-footer" />
+            <p> Nasze social media. Zapraszamy do obserwacji! </p>
+            <div class="social-media" style="display:flex; gap:20px; justify-content:center; padding: 1rem;">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/24/174/174848.png" alt="Facebook" width="24"
+                        height="24">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Instagram" width="24"
+                        height="24">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" width="24"
+                        height="24">
+                </a>
+            </div>
+            <p>© 2025 SmaczneGO. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="module" src="form.js"></script>
+    <div id="koszyk-popup" class="popup hidden"></div>
+
+</body>
+
+</html>

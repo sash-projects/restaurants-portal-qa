@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restauracja Polska</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark.css" id="dark-theme" disabled />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <a href="index.html">Strona główna</a>
+        <a href="restauracja1.html">Włoska</a>
+        <a href="restauracja2(pl).html">Polska</a>
+        <a href="restauracja3(az).html">Azjatycka</a>
+        <a href="restauracja4(ff).html">Fast Food</a>
+        <a href="zamówienia.html">Zamówienie</a>
+    </nav>
+    <header class="main-header">
+  <div class="header-bar">
+    <a href="index.html" class="back">&larr; Powrót</a>
+    <div class="header-actions">
+      <button id="toggle-theme">🌙 Tryb ciemny</button>
+      <a href="zamowienia.html" class="go-to-cart">🛒 Koszyk</a>
+    </div>
+  </div>
+  <h1>Menu - Restauracja Polska</h1>
+</header>
+
+
+    <section class="filter">
+        <label for="category-filter">Wybierz kategorię:</label>
+        <select id="category-filter">
+            <option value="all">Wszystkie</option>
+            <option value="przystawki">Przystawki</option>
+            <option value="zupy">Zupy</option>
+            <option value="dania-glowne">Dania główne</option>
+            <option value="desery">Desery</option>
+            <option value="napoje">Napoje</option>
+        </select>
+    </section>
+
+    <main class="menu">
+
+        <section class="category" id="przystawki">
+            <h2>Przystawki</h2>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/tatar.jpg" alt="Tatar wołowy z cebulką" />
+                <h3>Tatar wołowy z cebulką i surowym żółtkiem </h3>
+                <p class="price">Cena: 26 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/sledzik.jpg" alt="Śledzik w oleju" />
+                <h3>Śledzik w oleju z cebulką</h3>
+                <p class="price">Cena: 18 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+        <section class="category" id="zupy">
+            <h2>Zupy</h2>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/rosol.jpg" alt="Rosół z makaronem" />
+                <h3>Rosół z domowym makaronem</h3>
+                <p class="price">Cena: 18 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/barszcz.jpg" alt="Barszcz czerwony z uszkami" />
+                <h3>Barszcz czerwony z uszkami</h3>
+                <p class="price">Cena: 20 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/pomodorowa.jpg" alt="Pomidorowa" />
+                <h3>Pomidorowa z ryżem </h3>
+                <p class="price">Cena: 19 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/zurek.jpg" alt="Żurek" />
+                <h3>Żurek z białą kiełbasą i jajkiem </h3>
+                <p class="price">Cena: 25 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+        <section class="category" id="dania-glowne">
+            <h2>Dania główne</h2>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/schabowy.jpg" alt="Kotlet schabowy z ziemniakami i surówką" />
+                <h3>Kotlet schabowy z ziemniakami i surówką</h3>
+                <p class="price">Cena: 50 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/golabki.jpg" alt="Gołąbki w sosie pomidorowym" />
+                <h3>Gołąbki w sosie pomidorowym</h3>
+                <p class="price">Cena: 42 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" > 
+                <img src="assets/placki.jpg" alt="Placki ziemniaczane" />
+                <h3>Placki ziemniaczane ze śmietaną</h3>
+                <p class="price">Cena: 38 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/karkowka.jpg" alt="Karkówka w sosie z zielonego piprzu" />
+                <h3>Karkówka z sosem z zielonego piprzu, z zapiekanymi ziemkniaki oraz zestawem surówek</h3>
+                <p class="price">Cena: 45 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+        <section class="category" id="desery">
+            <h2>Desery</h2>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/sernik.jpg" alt="Sernik tradycyjny" />
+                <h3>Sernik tradycyjny</h3>
+                <p class="price">Cena: 15 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/faworki.jpg" alt="Faworki" />
+                <h3>Faworki (chrust)</h3>
+                <p class="price">Cena: 14 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/jablecznik.jpg" alt="Jabłecznik" />
+                <h3>Jabłecznik z bitą śmietaną</h3>
+                <p class="price">Cena: 16 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+        <section class="category" id="napoje">
+            <h2>Napoje</h2>
+
+            <article class="dish">
+                <h3>Kompot domowy</h3>
+                <p class="price">Cena: 6 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Woda mineralna (gaz/niegaz)</h3>
+                <p class="price">Cena: 5 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Sok jabłkowy 0.3L</h3>
+                <p class="price">Cena: 6 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Sok pomarańczowy 0.3L</h3>
+                <p class="price">Cena: 6 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Coca-Cola 0.5L</h3>
+                <p class="price">Cena: 7 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Kawa czarna</h3>
+                <p class="price">Cena: 9 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="assets/logo.jpg" alt=" Logo" class="logo-footer" />
+            <p> Nasze social media. Zapraszamy do obserwacji! </p>
+            <div class="social-media" style="display:flex; gap:20px; justify-content:center; padding: 1rem;">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/24/174/174848.png" alt="Facebook" width="24"
+                        height="24">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Instagram" width="24"
+                        height="24">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" width="24"
+                        height="24">
+                </a>
+            </div>
+            <p>© 2025 SmaczneGO. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    <script type="module" src="form.js"></script> 
+    <div id="koszyk-popup" class="popup hidden"></div> 
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmaczneGo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dark.css" id="dark-theme" disabled />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+  
+  <style>
+    .popup {
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #83d3a4;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      font-size: 1.2rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+    }
+    .hidden {
+      display: none;
+    }
+    button[type="submit"]:active {
+      transform: scale(0.97);
+      background-color: #83c285;
+      transition: 0.1s;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="main-nav" data-aos="fade-down" data-aos-duration="800">
+    <a href="index.html">Strona główna</a>
+    <a href="restauracja1.html">Włoska</a>
+    <a href="restauracja2(pl).html">Polska</a>
+    <a href="restauracja3(az).html">Azjatycka</a>
+    <a href="restauracja4(ff).html">Fast Food</a>
+    <a href="zamowienia.html">Zamówienie</a>
+  </nav>
+
+  <header class="main-header" data-aos="fade-up" data-aos-duration="1000">
+    <img src="assets/logo.jpg" width="300" height="220" alt="Logo" class="logo" />
+    <div class="header-content">
+  <div class="header-content">
+  <h1>Wybierz restaurację</h1>
+  <div class="header-actions">
+    <button id="toggle-theme">🌙 Tryb ciemny</button>
+    <a href="zamowienia.html" class="go-to-cart">🛒 Koszyk</a>
+  </div>
+</div>
+
+  </header>
+
+  <section class="filters" data-aos="fade-up" data-aos-delay="200">
+    <div class="filter-group">
+      <label for="cuisine">Kuchnia:</label>
+      <select id="cuisine">
+        <option value="all">Wszystkie</option>
+        <option value="wloska">Włoska</option>
+        <option value="polska">Polska</option>
+        <option value="azjatycka">Azjatycka</option>
+        <option value="fastfood">Fast food</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="sort">Sortuj:</label>
+      <select id="sort">
+        <option value="price">Cena</option>
+        <option value="time">Czas dostawy</option>
+      </select>
+    </div>
+  </section>
+
+  <main class="restaurant-grid" id="restaurant-list">
+    <!-- Restauracje będą generowane dynamicznie przez restaurant.js -->
+  </main>
+
+  <div class="video-banner centered-banner" data-aos="fade-up" data-aos-delay="500">
+    <div class="banner-wrapper">
+      <video autoplay muted loop playsinline>
+        <source src="assets/baner.mp4" type="video/mp4" />
+        Twoja przeglądarka nie obsługuje wideo HTML5.
+      </video>
+    </div>
+  </div>
+
+  <footer data-aos="fade-up" data-aos-delay="300">
+    <div class="footer-content">
+      <img src="assets/logo.jpg" alt="Logo" class="logo-footer" />
+      <p>Nasze social-media. Zapraszamy do obserwacji!</p>
+      <div class="social-media" style="display:flex; gap:20px; justify-content:center; padding: 1rem;">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/24/174/174848.png" alt="Facebook" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Instagram" width="24" height="24">
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" width="24" height="24">
+        </a>
+      </div>
+      <p>© 2025 SmaczneGO. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <div id="order-popup" class="popup hidden">
+    <p>✅ Twoje zamówienie zostało złożone!</p>
+  </div>
+
+  <div id="koszyk-popup" class="popup hidden"></div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    // Ciemny tryb
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('toggle-theme');
+      const darkTheme = document.getElementById('dark-theme');
+      let darkMode = false;
+
+      toggleBtn.addEventListener('click', () => {
+        darkMode = !darkMode;
+        darkTheme.disabled = !darkMode;
+        toggleBtn.textContent = darkMode ? '☀️ Tryb jasny' : '🌙 Tryb ciemny';
+      });
+    });
+  </script>
+
+  <script type="module" src="api.js"></script>
+  <script type="module" src="storage.js"></script>
+  <script type="module" src="restraunt.js"></script>
+  <script type="module" src="form.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+

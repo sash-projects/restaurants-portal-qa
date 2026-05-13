@@ -1,0 +1,36 @@
+const restaurantsMock = [
+  {
+    id: 1,
+    nazwa: 'Restauracja Włoska',
+    kuchnia: 'wloska',
+    sredniaCena: 45,
+    czasDostawy: 30,
+    link: 'restauracja1.html',
+  },
+  {
+    id: 2,
+    nazwa: 'Restauracja Polska',
+    kuchnia: 'polska',
+    sredniaCena: 40,
+    czasDostawy: 35,
+    link: 'restauracja2(pl).html',
+  },
+  {
+    id: 3,
+    nazwa: 'Restauracja Azjatycka',
+    kuchnia: 'azjatycka',
+    sredniaCena: 38,
+    czasDostawy: 25,
+    link: 'restauracja3(az).html',
+  },
+  {
+    id: 4,
+    nazwa: 'Restauracja Fast Food',
+    kuchnia: 'fastfood',
+    sredniaCena: 30,
+    czasDostawy: 15,
+    link: 'restauracja4(ff).html',
+  },
+];
+
+module.exports = { restaurantsMock };

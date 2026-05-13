@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Potwierdzenie</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dark.css" id="dark-theme" disabled />
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    main p {
+      margin-bottom: 1.2rem;
+      color: inherit;
+    }
+
+    main a {
+      color: #f04e30;
+      font-weight: 700;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    main a:hover {
+      color: #d03b20;
+      text-decoration: underline;
+    }
+
+    header h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 1.8rem;
+    }
+
+    header h1 .emoji {
+      font-size: 2.2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1><span class="emoji">✅</span> Dziękujemy za zamówienie!</h1>
+    <button id="toggle-theme">🌙 Tryb ciemny</button>
+  </header>
+  <main>
+    <p>Twoje zamówienie zostało przyjęte. Skontaktujemy się z Tobą wkrótce.</p>
+    <p><a href="index.html">← Powrót do strony głównej</a></p>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="assets/logo.jpg"" alt=" Logo" class="logo-footer" />
+      <p> Nasze social media. Zapraszamy do obserwacji! </p>
+      <div class="social-media" style="display:flex; gap:20px; justify-content:center; padding: 1rem;">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/24/174/174848.png" alt="Facebook" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Instagram" width="24" height="24">
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" width="24" height="24">
+        </a>
+      </div>
+      <p>© 2025 SmaczneGO. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

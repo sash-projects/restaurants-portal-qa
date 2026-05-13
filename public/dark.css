@@ -1,0 +1,320 @@
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#toggle-theme {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+#toggle-theme:hover {
+  background-color: #444444;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: #cccccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.filters {
+  background-color: #1e1e1e !important;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  max-width: 800px;
+}
+
+.filters label {
+  color: #ffffff;
+}
+
+.filters select {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.filters select:focus {
+  border-color: #f04e30;
+  outline: none;
+}
+
+.restaurant-card {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.08);
+}
+
+.restaurant-card .info {
+  color: #bbbbbb;
+}
+
+.dish {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  padding: 16px;
+  color: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.dish:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.08);
+}
+
+.dish img {
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+}
+
+.dish h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.dish p {
+  margin-bottom: 10px;
+  color: #dddddd;
+}
+
+.dish .price {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #f04e30;
+  margin-top: 0.4rem;
+}
+
+.dish button {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.dish button:hover {
+  background-color: #444444;
+}
+
+.order-form {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(240, 78, 48, 0.6);
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.order-form label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+.order-form input[type="text"],
+.order-form input[type="tel"] {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  border: 1.8px solid #f04e30;
+  border-radius: 8px;
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.order-form input[type="text"]:focus,
+.order-form input[type="tel"]:focus {
+  border-color: #ffa07a;
+  outline: none;
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+.order-form fieldset {
+  border: 1.5px solid #f04e30;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #f04e30;
+}
+
+.order-form legend {
+  font-weight: bold;
+  color: #f04e30;
+  padding: 0 0.5rem;
+}
+
+.order-form input[type="radio"],
+.order-form input[type="checkbox"] {
+  accent-color: #f04e30;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.order-form button {
+  background-color: #f04e30;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 1rem auto 0 auto;
+  min-width: 150px;
+}
+
+.order-form button:hover,
+.order-form button:focus {
+  background-color: #d03b20;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+article.dish {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+article.dish h3,
+article.dish p {
+  color: #ffffff;
+}
+
+article.dish .price {
+  color: #f04e30;
+  font-weight: bold;
+}
+
+article.dish img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+button {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a3a3a;
+}
+
+.category h2 {
+  color: #ffcc00;
+}
+
+.popup {
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+#category-filter {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #da4040;
+  background-color: #383838;
+  box-shadow: 0 2px 6px rgba(160, 160, 160, 0.1);
+  transition: all 0.3s ease;
+  appearance: none;
+  position: relative;
+}
+.usun-z-koszyka {
+  background-color: #222 !important;  /* ciemne tło */
+  color: #fff !important;             /* jasny tekst */
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.usun-z-koszyka:hover {
+  background-color: #444 !important;  /* jaśniejszy szary przy hoverze */
+  transform: scale(1.05);
+}
+#lista-koszyk {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+}
+.zamowienie-naglowek {
+  color: #fff;
+}
+

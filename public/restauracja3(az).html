@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restauracja Azjatycka</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark.css" id="dark-theme" disabled />
+        <script src="script.js" defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <a href="index.html">Strona główna</a>
+        <a href="restauracja1.html">Włoska</a>
+        <a href="restauracja2(pl).html">Polska</a>
+        <a href="restauracja3(az).html">Azjatycka</a>
+        <a href="restauracja4(ff).html">Fast Food</a>
+        <a href="zamówienia.html">Zamówienie</a>
+    </nav>
+    <header class="main-header">
+  <div class="header-bar">
+    <a href="index.html" class="back">&larr; Powrót</a>
+    <div class="header-actions">
+      <button id="toggle-theme">🌙 Tryb ciemny</button>
+      <a href="zamowienia.html" class="go-to-cart">🛒 Koszyk</a>
+    </div>
+  </div>
+  <h1>Menu - Restauracja Azjatycka</h1>
+</header>
+
+
+    <section class="filter">
+        <label for="category-filter">Wybierz kategorię:</label>
+        <select id="category-filter">
+            <option value="all">Wszystkie</option>
+            <option value="przystawki">Przystawki</option>
+            <option value="zupy">Zupy</option>
+            <option value="dania-glowne">Dania główne</option>
+            <option value="desery">Desery</option>
+            <option value="napoje">Napoje</option>
+        </select>
+    </section>
+
+    <main class="menu">
+
+        <section class="category" id="przystawki">
+            <h2>Przystawki</h2>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/springrolls.jpg" alt="Spring Rolls" />
+                <h3>Spring Rolls</h3>
+                <p>Z warzywami i sosem słodko-kwaśnym</p>
+                <p class="price">Cena: 18 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/edamame.jpg" alt="Edamame" />
+                <h3>Edamame</h3>
+                <p>Gotowane młode strąki soi z solą morską</p>
+                <p class="price">Cena: 15 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/gyoza.jpg" alt="Gyoza" />
+                <h3>Gyoza</h3>
+                <p>Chińskie pierożki z warzywami</p>
+                <p class="price">Cena: 20 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/kimchi.jpg" alt="Kimchi" />
+                <h3>Kimchi</h3>
+                <p>Fermentowana kapusta pekińska</p>
+                <p class="price">Cena: 14 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+        <section class="category" id="zupy">
+            <h2>Zupy</h2>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/ramen.jpg" alt="Ramen" />
+                <h3>Ramen</h3>
+                <p>Rosół, makaron, jajko, wieprzowina</p>
+                <p class="price">Cena: 32 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/miso.jpg" alt="Zupa Miso" />
+                <h3>Zupa Miso</h3>
+                <p>Bulion miso z tofu, glonami i szczypiorkiem</p>
+                <p class="price">Cena: 14 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/tomyum.jpg" alt="Tom Yum" />
+                <h3>Tom Yum</h3>
+                <p>Pikantna zupa tajska z krewetkami</p>
+                <p class="price">Cena: 30 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/pho.jpg" alt="Pho" />
+                <h3>Pho</h3>
+                <p>Wietnamski bulion z makaronem ryżowym</p>
+                <p class="price">Cena: 28 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+        <section class="category" id="dania-glowne">
+            <h2>Dania główne</h2>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/sushi.jpg" alt="Zestaw sushi" />
+                <h3>Zestaw sushi</h3>
+                <p>12 kawałków - łosoś, tuńczyk, awokado</p>
+                <p class="price">Cena: 42 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up">
+                <img src="assets/padthai.jpg" alt="Pad Thai" />
+                <h3>Pad Thai</h3>
+                <p>Makaron ryżowy z kurczakiem i orzeszkami</p>
+                <p class="price">Cena: 34 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/curry.jpg" alt="Curry tajskie" />
+                <h3>Curry tajskie</h3>
+                <p>Na mleku kokosowym z warzywami</p>
+                <p class="price">Cena: 36 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/udon.jpg" alt="Makaron Udon" />
+                <h3>Makaron Udon</h3>
+                <p>Z warzywami i sosem sojowym</p>
+                <p class="price">Cena: 29 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+        <section class="category" id="desery">
+            <h2>Desery</h2>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/mochi.jpg" alt="Mochi" />
+                <h3>Mochi</h3>
+                <p>Japońskie ciasteczka ryżowe</p>
+                <p class="price">Cena: 16 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/green-tea-ice.jpg" alt="Lody zielonej herbaty" />
+                <h3>Lody z zielonej herbaty</h3>
+                <p>Domowe lody matcha</p>
+                <p class="price">Cena: 14 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up" >
+                <img src="assets/dorayaki.jpg" alt="Dorayaki" />
+                <h3>Dorayaki</h3>
+                <p>Placuszki z nadzieniem z czerwonej fasoli</p>
+                <p class="price">Cena: 17 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish" data-aos="fade-up"  >
+                <img src="assets/coconut-pudding.jpg" alt="Pudding kokosowy" />
+                <h3>Pudding kokosowy</h3>
+                <p>Na mleku kokosowym z mango</p>
+                <p class="price">Cena: 15 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+        <section class="category" id="napoje">
+            <h2>Napoje</h2>
+
+            <article class="dish">
+                <h3>Herbata jaśminowa</h3>
+                <p> Delikatna zielona herbata aromatyzowana kwiatami jaśminu </p>
+                <p class="price">Cena: 8 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Bubble Tea</h3>
+                <p>Z mlekiem i kulkami tapioki</p>
+                <p class="price">Cena: 14 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Sake</h3>
+                <p>Japońskie wino ryżowe 100 ml</p>
+                <p class="price">Cena: 20 zł</p>
+                <button>Zamów</button>
+            </article>
+
+            <article class="dish">
+                <h3>Woda mineralna</h3>
+                <p>Niegazowana 0.5L</p>
+                <p class="price">Cena: 5 zł</p>
+                <button>Zamów</button>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="assets/logo.jpg"" alt=" Logo" class="logo-footer" />
+            <p> Nasze social media. Zapraszamy do obserwacji! </p>
+            <div class="social-media" style="display:flex; gap:20px; justify-content:center; padding: 1rem;">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/24/174/174848.png" alt="Facebook" width="24"
+                        height="24">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Instagram" width="24"
+                        height="24">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" width="24"
+                        height="24">
+                </a>
+            </div>
+            <p>© 2025 SmaczneGO. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+        <script type="module" src="form.js"></script> 
+        <div id="koszyk-popup" class="popup hidden"></div> 
+
+</body>
+
+</html>
